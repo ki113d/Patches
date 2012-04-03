@@ -1,5 +1,5 @@
 --- /var/abs/community/ncmpcpp/PKGBUILD	2012-03-31 21:07:45.000000000 -0700
-+++ PKGBUILD	2012-04-02 15:55:24.224897535 -0700
++++ PKGBUILD	2012-04-03 13:26:28.649656985 -0700
 @@ -4,16 +4,16 @@
  # Contributor: Army <uli[dot]armbruster[at]gmail[dot]com>
  
@@ -20,13 +20,14 @@
  
  build() {
    cd "$srcdir/${pkgname}-${pkgver}"
-@@ -22,7 +22,8 @@
+@@ -22,7 +22,9 @@
  	 --enable-clock   \
    	 --with-taglib    \
    	 --enable-outputs  \
 -  	 --with-curl
 +  	 --with-curl \
-+     --with-fftw
++     --with-fftw \
++     --enable-visualizer
    make
  }
  
